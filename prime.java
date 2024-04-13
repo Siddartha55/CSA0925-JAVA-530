@@ -1,20 +1,19 @@
 import java.util.*;
 class prime{
 	public static void main(String[] args){
-  		int n,i,prime=0;
 		Scanner s=new Scanner(System.in);
-		System.out.println("enter number");
+		int n,i,prime=0;
+		System.out.println("Enter the number : ");
 		n=s.nextInt();
 		for(i=2;i<n;i++){
 			if(n%i==0){
-				System.out.println("it is a not prime num");
+				System.out.println("it is not a prime number : ");
 				prime=1;
 				break;
 			}
-			}
-
-			if(prime==0){
-				System.out.println("it is a prime num");
-			}
-}
+		}
+		if(prime==0){
+				System.out.println("it is prime number");
+		}
+	}
 }
